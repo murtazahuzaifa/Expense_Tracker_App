@@ -1,0 +1,79 @@
+*:active{
+    border: 0px;  
+    outline: 0px;                  
+}
+.TransactionList {
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+li {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+li div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+li button {
+    position: absolute;
+    padding: 3px 6px 3px 6px;
+    border-radius: 13px;
+    border: 0px;
+    color: white;
+    background-color: rgb(255, 0, 0, );
+    /* margin: 0 auto; */
+    visibility: hidden;
+}
+
+ul .positive-income {
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 7px;
+    background-color: rgb(218, 203, 221);
+    border-right: 5px solid green;
+    border-bottom: 2px solid green;
+}
+
+ul .negative-expense {
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 7px;
+    background-color: rgb(218, 203, 221);
+    border-right: 5px solid rgb(255, 64, 64);
+    border-bottom: 2px solid rgb(255, 64, 64);
+}
+
+li:hover .list-text{
+    font-size: large;
+}
+li:hover .delete-btn {
+    cursor: pointer;
+    background-color: rgb(255, 0, 0); 
+    visibility: visible;                  
+}
+.delete-btn:hover {
+    font-size: 15px;
+    padding: 4px 7px 4px 7px;
+    background-color: rgb(155, 152, 152);
+    border: 2px solid white;
+}
+
+ul .positive-income:hover {
+    box-shadow: 2px 2px 3px rgb(4, 109, 4);
+    background-color: lightgreen;
+}
+
+ul .negative-expense:hover {
+    box-shadow: 2px 2px 3px rgb(155, 8, 8);
+    background-color: rgb(255, 86, 86);
+}
