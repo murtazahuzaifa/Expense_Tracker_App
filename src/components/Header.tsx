@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Header = ()=>{
+const Header: React.FC = ()=>{
     const creater =  'by Murtaza'
     return(
         // <h1>Expense Tracker App By Murtaza</h1>
