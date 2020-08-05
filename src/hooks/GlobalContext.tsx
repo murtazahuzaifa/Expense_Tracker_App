@@ -1,6 +1,6 @@
 import React, { createContext, useReducer } from 'react';
 import AppReducer from './AppReducer';
-import { TransactionType, GlobalContextPropType, GlobalContextPartailType } from '../types/AppTypes';
+import { TransactionType, GlobalContextPropType } from '../types/AppTypes';
 
 export let GlobalContext = createContext<any>({});
 
